@@ -1,91 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Careers | A+ Home Tuition</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join as Tutor | A+ Home Tuition</title>
+  <meta name="description" content="Apply as a tutor and receive student leads matched to your subjects and expertise.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-
-    <nav class="navbar">
-        <div class="logo">A+ <span>Home Tuition</span></div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="careers.html">Join as Tutor</a></li>
-            <li><a href="admissions.html" class="btn-nav">Book a Tutor</a></li>
-        </ul>
-        <div class="hamburger"><i class="fas fa-bars"></i></div>
-    </nav>
-
-    <div class="page-header">
-        <h1>Become a Tutor</h1>
-        <p>Join our team of 50+ experts. Flexible hours, great earnings, and professional support.</p>
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a class="logo" href="index.html">A+ <span>Home Tuition</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="admissions.html">For Students</a></li>
+        <li><a href="index.html#teachers">For Teachers</a></li>
+        <li><a href="careers.html" class="btn btn-primary btn-nav">Apply as Tutor</a></li>
+      </ul>
+      <div class="hamburger"><i class="fas fa-bars"></i></div>
     </div>
+  </nav>
 
-    <div class="standalone-form-container">
-        <form onsubmit="event.preventDefault(); sendTeacherEnquiry();">
-            <label><b>Tutor Registration</b></label>
-            <input type="text" id="t_name" placeholder="Full Name" required>
-            <input type="tel" id="t_phone" placeholder="WhatsApp Number" required>
-            <input type="text" id="t_qual" placeholder="Highest Qualification (e.g., M.Sc, B.Tech)" required>
+  <main>
+    <section class="page-hero">
+      <div class="page-wrap page-hero-block">
+        <span class="badge"><span class="dot"></span> Teacher Section</span>
+        <h1>Build Your Tutor Profile and <span class="accent">Get Better Leads</span></h1>
+        <p>Join A+ and receive relevant tuition requests according to your subjects and expertise level.</p>
+      </div>
+    </section>
 
-            <label style="display:block; margin-bottom:10px; font-weight:600;">Subjects you can teach:</label>
+    <section class="form-shell">
+      <div class="page-wrap form-layout">
+        <article class="form-card reveal">
+          <h2>Tutor Registration</h2>
+          <form onsubmit="event.preventDefault(); sendTeacherEnquiry();">
+            <label for="t_name">Full Name</label>
+            <input type="text" id="t_name" placeholder="Enter your full name" required>
+
+            <label for="t_phone">WhatsApp Number</label>
+            <input type="tel" id="t_phone" placeholder="Enter WhatsApp number" required>
+
+            <label for="t_qual">Highest Qualification</label>
+            <input type="text" id="t_qual" placeholder="Example: M.Sc, B.Tech" required>
+
+            <label>Subjects You Can Teach</label>
             <div class="checkbox-group">
-                <label class="checkbox-label"><input type="checkbox" name="t_sub" value="Maths"> Mathematics</label>
-                <label class="checkbox-label"><input type="checkbox" name="t_sub" value="Physics"> Physics</label>
-                <label class="checkbox-label"><input type="checkbox" name="t_sub" value="Chemistry"> Chemistry</label>
-                <label class="checkbox-label"><input type="checkbox" name="t_sub" value="Biology"> Biology</label>
-                <label class="checkbox-label"><input type="checkbox" name="t_sub" value="English"> English</label>
-                <label class="checkbox-label"><input type="checkbox" name="t_sub" value="All Junior"> All (Class 1-10)</label>
+              <label class="checkbox-label"><input type="checkbox" name="t_sub" value="Maths"> Mathematics</label>
+              <label class="checkbox-label"><input type="checkbox" name="t_sub" value="Physics"> Physics</label>
+              <label class="checkbox-label"><input type="checkbox" name="t_sub" value="Chemistry"> Chemistry</label>
+              <label class="checkbox-label"><input type="checkbox" name="t_sub" value="Biology"> Biology</label>
+              <label class="checkbox-label"><input type="checkbox" name="t_sub" value="English"> English</label>
+              <label class="checkbox-label"><input type="checkbox" name="t_sub" value="All Junior"> All (Class
+                1-10)</label>
             </div>
 
-            <button type="submit" class="btn-submit">
-                <i class="fab fa-whatsapp"></i> Apply as Tutor
-            </button>
-        </form>
+            <button type="submit" class="btn-submit"><i class="fab fa-whatsapp"></i> Apply on WhatsApp</button>
+          </form>
+        </article>
+
+        <aside class="info-card reveal reveal-delay-1">
+          <div class="info-photo">
+            <img src="https://images.unsplash.com/photo-1544717305-996b815c338c?auto=format&fit=crop&w=900&q=80"
+              alt="Teacher mentoring student">
+          </div>
+          <h3>Why Tutors Join</h3>
+          <ul class="info-list">
+            <li><i class="fas fa-chart-line" style="color: var(--accent-2); margin-right: 8px;"></i>Get more relevant
+              student requests by subject profile.</li>
+            <li><i class="fas fa-clock" style="color: var(--accent-2); margin-right: 8px;"></i>Flexible online and home
+              tuition opportunities.</li>
+            <li><i class="fas fa-headset" style="color: var(--accent-2); margin-right: 8px;"></i>Dedicated support for
+              faster onboarding.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="page-wrap">
+      <div class="footer-bottom">&copy; 2026 A+ Home Tuition. All rights reserved.</div>
     </div>
+  </footer>
 
-    <footer>
-        <div style="text-align:center; color:#94a3b8; padding: 20px;">
-            <p>&copy; 2025 A+ Home Tuition. All Rights Reserved.</p>
-        </div>
-    </footer>
+  <a href="https://wa.me/917006968617" class="whatsapp-float" target="_blank" rel="noopener"><i
+      class="fab fa-whatsapp"></i></a>
 
-    <script>
-        // Menu Toggle
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            hamburger.querySelector('i').classList.toggle('fa-bars');
-            hamburger.querySelector('i').classList.toggle('fa-times');
-        });
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      hamburger.querySelector('i').classList.toggle('fa-bars');
+      hamburger.querySelector('i').classList.toggle('fa-times');
+    });
 
-        // WhatsApp Logic
-        function sendTeacherEnquiry() {
-            const name = document.getElementById('t_name').value;
-            const phone = document.getElementById('t_phone').value;
-            const qual = document.getElementById('t_qual').value;
-            
-            let subjects = [];
-            document.querySelectorAll('input[name="t_sub"]:checked').forEach(cb => subjects.push(cb.value));
-
-            if(!name || !phone || !qual || subjects.length === 0) { 
-                alert("Please fill all details and select at least one subject."); return; 
-            }
-
-            const msg = `*New Tutor Application* 👨‍🏫%0A%0A` +
-                        `👤 Name: ${name}%0A` +
-                        `📞 Phone: ${phone}%0A` +
-                        `🎓 Qualification: ${qual}%0A` +
-                        `📖 Subjects: ${subjects.join(', ')}`;
-
-            window.open(`https://wa.me/917006968617?text=${msg}`, '_blank');
+    /* — Scroll Reveal — */
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
         }
-    </script>
+      });
+    }, { threshold: 0.12 });
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    function sendTeacherEnquiry() {
+      const name = document.getElementById('t_name').value;
+      const phone = document.getElementById('t_phone').value;
+      const qual = document.getElementById('t_qual').value;
+
+      const subjects = [];
+      document.querySelectorAll('input[name="t_sub"]:checked').forEach((cb) => subjects.push(cb.value));
+
+      if (!name || !phone || !qual || subjects.length === 0) {
+        alert('Please fill all details and select at least one subject.');
+        return;
+      }
+
+      const msg = `*New Tutor Application* 👨‍🏫%0A%0A` +
+        `👤 Name: ${name}%0A` +
+        `📞 Phone: ${phone}%0A` +
+        `🎓 Qualification: ${qual}%0A` +
+        `📖 Subjects: ${subjects.join(', ')}`;
+
+      window.open(`https://wa.me/917006968617?text=${msg}`, '_blank');
+    }
+  </script>
 </body>
 
 </html>

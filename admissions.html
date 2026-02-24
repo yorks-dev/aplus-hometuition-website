@@ -1,100 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admissions | A+ Home Tuition</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Admission | A+ Home Tuition</title>
+  <meta name="description" content="Submit student requirements and get matched with the right home or online tutor.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-
-    <nav class="navbar">
-        <div class="logo">A+ <span>Home Tuition</span></div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="careers.html">Join as Tutor</a></li>
-            <li><a href="admissions.html" class="btn-nav">Book a Tutor</a></li>
-        </ul>
-        <div class="hamburger"><i class="fas fa-bars"></i></div>
-    </nav>
-
-    <div class="page-header">
-        <h1>Student Admission</h1>
-        <p>Complete the form below to connect with the best tutors in your area.</p>
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a class="logo" href="index.html">A+ <span>Home Tuition</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#students">For Students</a></li>
+        <li><a href="careers.html">For Teachers</a></li>
+        <li><a href="admissions.html" class="btn btn-primary btn-nav">Book Tutor</a></li>
+      </ul>
+      <div class="hamburger"><i class="fas fa-bars"></i></div>
     </div>
+  </nav>
 
-    <div class="standalone-form-container">
-        <form onsubmit="event.preventDefault(); sendStudentEnquiry();">
-            <label><b>Student Details</b></label>
-            <input type="text" id="s_name" placeholder="Student's Full Name" required>
-            <input type="tel" id="s_phone" placeholder="WhatsApp Number" required>
-            
-            <div style="display: flex; gap: 10px;">
+  <main>
+    <section class="page-hero">
+      <div class="page-wrap page-hero-block">
+        <span class="badge"><span class="dot"></span> Student Section</span>
+        <h1>Find the Right Tutor with <span class="accent">Clear Outcomes</span></h1>
+        <p>Share class, board and goals. We connect you to the most suitable tutor through WhatsApp.</p>
+      </div>
+    </section>
+
+    <section class="form-shell">
+      <div class="page-wrap form-layout">
+        <article class="form-card reveal">
+          <h2>Student Details</h2>
+          <form onsubmit="event.preventDefault(); sendStudentEnquiry();">
+            <label for="s_name">Student Full Name</label>
+            <input type="text" id="s_name" placeholder="Enter student name" required>
+
+            <label for="s_phone">WhatsApp Number</label>
+            <input type="tel" id="s_phone" placeholder="Enter WhatsApp number" required>
+
+            <div class="form-grid-two">
+              <div>
+                <label for="s_class">Class Range</label>
                 <select id="s_class" required>
-                    <option value="">Select Class</option>
-                    <option>Class 1 to 5</option>
-                    <option>Class 6 to 8</option>
-                    <option>Class 9 & 10</option>
-                    <option>Class 11 & 12</option>
+                  <option value="">Select class</option>
+                  <option>Class 1 to 5</option>
+                  <option>Class 6 to 8</option>
+                  <option>Class 9 & 10</option>
+                  <option>Class 11 & 12</option>
                 </select>
+              </div>
+              <div>
+                <label for="s_board">Board</label>
                 <select id="s_board">
-                    <option value="State Board">State Board</option>
-                    <option value="CBSE">CBSE</option>
-                    <option value="ICSE">ICSE</option>
+                  <option value="State Board">State Board</option>
+                  <option value="CBSE">CBSE</option>
+                  <option value="ICSE">ICSE</option>
                 </select>
+              </div>
             </div>
 
+            <label for="s_goal">Requirement</label>
             <select id="s_goal" required>
-                <option value="">What do you need?</option>
-                <option>All Subjects Tuition</option>
-                <option>Maths & Science Only</option>
-                <option>JEE / NEET Preparation</option>
-                <option>English / Language Learning</option>
-                <option>Any Other Subject</option>
+              <option value="">Select your requirement</option>
+              <option>All Subjects Tuition</option>
+              <option>Maths & Science Only</option>
+              <option>JEE / NEET Preparation</option>
+              <option>English / Language Learning</option>
+              <option>Any Other Subject</option>
             </select>
 
-            <button type="submit" class="btn-submit">
-                <i class="fab fa-whatsapp"></i> Send Enquiry
-            </button>
-        </form>
+            <button type="submit" class="btn-submit"><i class="fab fa-whatsapp"></i> Send Enquiry</button>
+          </form>
+        </article>
+
+        <aside class="info-card reveal reveal-delay-1">
+          <div class="info-photo">
+            <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=900&q=80"
+              alt="Student learning at home">
+          </div>
+          <h3>What Happens Next</h3>
+          <ul class="info-list">
+            <li><i class="fas fa-clipboard-check" style="color: var(--primary); margin-right: 8px;"></i>We review
+              student requirement and preferred schedule.</li>
+            <li><i class="fas fa-user-check" style="color: var(--primary); margin-right: 8px;"></i>We shortlist tutors
+              based on class, board, and goals.</li>
+            <li><i class="fab fa-whatsapp" style="color: #25d366; margin-right: 8px;"></i>You get tutor profile options
+              on WhatsApp quickly.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="page-wrap">
+      <div class="footer-bottom">&copy; 2026 A+ Home Tuition. All rights reserved.</div>
     </div>
+  </footer>
 
-    <footer>
-        <div style="text-align:center; color:#94a3b8; padding: 20px;">
-            <p>&copy; 2025 A+ Home Tuition. All Rights Reserved.</p>
-        </div>
-    </footer>
+  <a href="https://wa.me/917006968617" class="whatsapp-float" target="_blank" rel="noopener"><i
+      class="fab fa-whatsapp"></i></a>
 
-    <script>
-        // Menu Toggle
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            hamburger.querySelector('i').classList.toggle('fa-bars');
-            hamburger.querySelector('i').classList.toggle('fa-times');
-        });
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      hamburger.querySelector('i').classList.toggle('fa-bars');
+      hamburger.querySelector('i').classList.toggle('fa-times');
+    });
 
-        // WhatsApp Logic
-        function sendStudentEnquiry() {
-            const name = document.getElementById('s_name').value;
-            const phone = document.getElementById('s_phone').value;
-            const cls = document.getElementById('s_class').value;
-            const board = document.getElementById('s_board').value;
-            const goal = document.getElementById('s_goal').value;
-
-            if(!name || !phone || !cls || !goal) { alert("Please fill all required fields."); return; }
-
-            const msg = `*New Student Admission* 🎓%0A%0A` +
-                        `👤 Name: ${name}%0A` +
-                        `📞 Phone: ${phone}%0A` +
-                        `📚 Class: ${cls} (${board})%0A` +
-                        `🎯 Requirement: ${goal}`;
-            
-            window.open(`https://wa.me/917006968617?text=${msg}`, '_blank');
+    /* — Scroll Reveal — */
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
         }
-    </script>
+      });
+    }, { threshold: 0.12 });
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    function sendStudentEnquiry() {
+      const name = document.getElementById('s_name').value;
+      const phone = document.getElementById('s_phone').value;
+      const cls = document.getElementById('s_class').value;
+      const board = document.getElementById('s_board').value;
+      const goal = document.getElementById('s_goal').value;
+
+      if (!name || !phone || !cls || !goal) {
+        alert('Please fill all required fields.');
+        return;
+      }
+
+      const msg = `*New Student Admission* 🎓%0A%0A` +
+        `👤 Name: ${name}%0A` +
+        `📞 Phone: ${phone}%0A` +
+        `📚 Class: ${cls} (${board})%0A` +
+        `🎯 Requirement: ${goal}`;
+
+      window.open(`https://wa.me/917006968617?text=${msg}`, '_blank');
+    }
+  </script>
 </body>
+
 </html>
